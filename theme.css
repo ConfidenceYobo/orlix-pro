@@ -1,0 +1,356 @@
+/**
+* Orlix Pro
+* v 0.1
+* Licensed under MIT (https://github.com/ConfiYobo/orlix-pro/blob/master/LICENSE)
+*
+*/
+
+
+/*Main area*/
+.CodeMirror,
+.CodeMirror .CodeMirror-scroll {
+    background: #282B33;
+    color: #EAECF0;
+}
+
+.CodeMirror-cursor {
+    border-left: 1px solid #EAECF0;
+    z-index: 3;
+}
+
+.CodeMirror .CodeMirror-overwrite .CodeMirror-cursor {
+    border-left: none;
+    border-bottom: 2px solid #ede0ce;
+}
+
+.CodeMirror .CodeMirror-scroll .CodeMirror-gutters {
+    background: #2b2a27;
+    border-right: 1px solid #000;
+}
+
+
+/*Left vertical bar with line count*/
+/*Syntax elements & action*/
+.cm-atom,
+.cm-link {
+    color: #11A3F6;
+}
+
+
+/*Attribute value ex. #f00 in color:#f00; Link;*/
+.cm-def {
+    color: #11A3F6;
+}
+
+/*variable definition*/
+.cm-number {
+    color: #8194A2;
+}
+
+/*Numbers*/
+.cm-variable {
+    color: #FF5D38;
+}
+
+/*Variable name ex. class Variable_name */
+.cm-variable-2 {
+    color: #11A3F6;
+}
+
+/*Variable declaration ex. $variable */
+.cm-variable-3 {
+    color: #5C5C5C;
+}
+
+.cm-property {
+    color: #EC8937;
+}
+
+/*Property ex. color in color:#f00;*/
+.cm-operator {
+    color: inherit;
+}
+
+/*Operators ex. dots (:) between property and atom value */
+.cm-comment {
+    color: #99A3B4;
+    font-style: italic;
+}
+
+/*Comment*/
+.cm-string {
+    color: #E65B3D;
+}
+
+/*String elements ex. "description" in name="description" - including quotation*/
+.cm-meta {
+    color: #879D98;
+}
+
+/*Meta elements like ex.: <!DOCTYPE html>*/
+.cm-qualifier {
+    color: #55D78D;
+}
+
+/*Final qualifier like css class ex.: .cm-qualifier*/
+.cm-builtin {
+    color: #55D78D;
+}
+
+/*Final qualifier like css id ex.: #context-menu-bar*/
+.cm-tag {
+    color: #2E83FD;
+}
+
+/*Tags ex. ul or <ul>*/
+.cm-attribute {
+    color: #FF5D38;
+}
+
+/*Attribute ex. rel, href, name*/
+.cm-keyword {
+    color: #2E83FD;
+}
+
+/*Element call ex. array, class, public function, if, elseif, !important*/
+.cm-matchingtag {
+    background-color: #44475a;
+}
+
+.cm-error {
+    font-style: italic;
+    background: #FB4328 !important;
+    color: #fff !important;
+    text-shadow: none !important;
+}
+
+.cm-header {
+    color: #EAECF0;
+    font-weight: bolder;
+}
+
+/*Element in md file ex. # title*/
+.CodeMirror-selected {
+    background-color: rgb(62, 87, 123);
+    background-color: rgba(62, 87, 123, 0.43) !important;
+    border-left: 1px solid #44a4e0;
+    border-right: 1px solid #44a4e0;
+}
+
+/*Selected lines - may need !important*/
+.CodeMirror-activeline-background {
+    background: rgb(255, 255, 255);
+    background: rgba(255, 255, 255, 0.1) !important;
+    border-bottom: 1px solid #ed900e;
+    border-top: 1px solid #ed900e;
+}
+
+.CodeMirror-matchingtag {
+    background: none;
+    text-decoration: none;
+    font-weight: normal;
+    color: #888DA3 !important;
+}
+
+/*Matching tags, open/close. Try !important for bg, color etc. if it doesn't work*/
+.CodeMirror-matchingbracket {
+    background-color: #425977;
+    font-weight: bold;
+    color: #fff !important;
+}
+
+/*Matching brackets, open/close*/
+.cm-attribute {
+    color: #FF5D38;
+}
+
+/*class in file md*/
+.cm-m-css.cm-atom {
+    color: #EAECF0;
+}
+
+.cm-m-css.cm-variable-2 {
+    color: #CC8C5C;
+}
+
+.cm-m-javascript.cm-operator {
+    color: #5BC1D9;
+}
+
+/* json properties*/
+.cm-m-javascript.cm-string.cm-property {
+    color: #9CCAE9;
+}
+
+.cm-m-javascript.cm-number {
+    color: #5BC1D9;
+}
+
+.cm-m-javascript.cm-string-2 {
+    color: #E65B3D;
+}
+
+.cm-m-javascript.cm-def {
+    color: #46EE65;
+}
+
+.cm-m-javascript.cm-variable {
+    color: #15BC0D;
+}
+
+.cm-m-javascript.cm-variable-2 {
+    color: #E0F550;
+}
+
+.cm-m-clike.cm-builtin {
+    color: #61F352;
+}
+
+.cm-m-clike.cm-variable {
+    color: #E0F550;
+}
+
+.cm-m-clike.cm-keyword {
+    color: #92B3EC;
+}
+
+.CodeMirror-focused .CodeMirror-activeline .CodeMirror-gutter-elt {
+    color: #f00;
+    background-color: transparent !important;
+}
+
+/*Inline editor(Ex. Quick Edit - Ctrl + E)*/
+.CodeMirror .inline-widget {
+    background: #6a6560;
+    color: #ccc;
+}
+
+.inline-widget .css-prop-defn {
+    color: white !important;
+}
+
+.inline-widget .css-prop-defn h1 {
+    color: #839CA4 !important;
+}
+
+.inline-widget .css-prop-defn dt {
+    color: #839CA4 !important;
+}
+
+.inline-widget .css-prop-defn b {
+    color: #839CA4 !important;
+}
+
+.inline-widget .css-prop-defn code {
+    color: #839CA4 !important;
+}
+
+.inline-widget .css-prop-defn .divider-holder.no-focus .divider {
+    border-color: #5C5C5C;
+}
+
+
+/* Stripe in the middle */
+.CodeMirror .CodeMirror-linenumber {
+    color: #99A3B4;
+    background-color: #1E1E1E;
+}
+
+/* Scrollbar gutter for the sidebar*/
+#sidebar ::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+
+/* Schrollbar  ::-webkit-scrollbar"  in the main area */
+::-webkit-scrollbar {
+    width: 11px !important;
+    height: 11px !important;
+}
+
+.CodeMirror-scrollbar-filler {
+    height: 11px !important;
+    width: 11px !important;
+    background: #5C5C5C;
+}
+
+.CodeMirror-vscrollbar {
+    bottom: 11px !important;
+    top: 11px;
+    border-right: thin solid #999;
+}
+
+.CodeMirror .CodeMirror-hscrollbar {
+    height: 11px;
+    right: 11px !important;
+}
+
+/* Scrollbar gutter  */
+::-webkit-scrollbar-track {
+    background-color: #5C5C5C;
+}
+
+/* Scroll object - "background-color" dont work use border to change color*/
+::-webkit-scrollbar-thumb {
+    border: 6px solid #2b2a27;
+    border-radius: 2px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    border: 6px solid #1C2020;
+}
+
+::-webkit-scrollbar-thumb:active {
+    border: 6px solid #101010;
+}
+
+/* the "x" to close, shout work for all avaailable classes  */
+.close {
+    color: #2b2a27 !important;
+    opacity: 0.5;
+}
+
+.close:hover {
+    opacity: 1;
+}
+
+.CodeMirror .cm-dk-whitespace-space::before,
+.CodeMirror .cm-dk-whitespace-tab::before,
+.CodeMirror .cm-dk-whitespace-leading-space::before,
+.CodeMirror .cm-dk-whitespace-leading-tab::before,
+.CodeMirror .cm-dk-whitespace-trailing-space::before,
+.CodeMirror .cm-dk-whitespace-trailing-tab::before {
+    background-color: #778699 !important;
+}
+
+.CodeMirror-foldgutter,
+.CodeMirror-foldgutter-blank,
+.CodeMirror-foldgutter-folded,
+.CodeMirror-foldgutter-open,
+.CodeMirror-foldgutter-folded:after {
+    color: #343434;
+}
+
+.CodeMirror-foldgutter-open:after {
+    color: #839CA4;
+}
+
+.CodeMirror-foldmarker {
+    background-color: #B7CACB;
+    border-color: #5C5C5C;
+    color: #ede0ce;
+    padding: 0 10px;
+}
+
+.CodeMirror-searching {
+    background-color: #778699;
+    border-bottom: 2px solid #FF5D38;
+}
+
+.searching-current-match {
+    background-color: #ede0ce;
+}
+
+.quick-view-highlight {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-bottom: 2px solid #3A4A72;
+}

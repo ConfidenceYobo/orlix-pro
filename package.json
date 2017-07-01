@@ -1,0 +1,21 @@
+{
+    "name": "orlix-pro",
+    "title": "Orlix Pro",
+    "description": "Orlix Pro dark colourful theme with nice syntax hylighter by COnfi Yobo",
+    "homepage": "https://github.com/ConfiYobo/orlix-pro",
+    "version": "0.0.1",
+    "author": "Confi Yobo <confiyobo@gmail.com> (http://facebook.com/confi.yobo)",
+    "license": "https://github.com/ConfiYobo/orlix-pro/blob/master/LICENSE",
+    "theme": {
+        "file": "theme.css",
+        "dark": true,
+        "addModeClass": true
+    },
+    "keywords": [
+        "dark",
+        "colourful",
+        "amazing",
+        "beautiful",
+        "hyghlighter"
+    ]
+}
